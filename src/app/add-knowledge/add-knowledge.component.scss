@@ -1,0 +1,51 @@
+.card-div {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light-grey);
+}
+
+.mat-mdc-unelevated-button {
+    background-color: var(--dark-grey) !important;
+    color: white !important;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: 50vh;
+
+    .mat-mdc-form-field {
+        width: 36vw;
+    }
+
+    textarea {
+        resize: none !important;
+        height: 22vh;
+    }
+
+    textarea::placeholder {
+        text-align:right;
+        transform: translateY(150px);
+      }
+}
+
+.save-btn {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-btn {
+    position: absolute;
+    top: 15vh;
+    left: 2vw;
+    color: var(--dark-grey);
+}
+
+::ng-deep .mdc-text-field--filled {
+    background-color: white !important;       
+}

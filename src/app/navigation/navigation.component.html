@@ -1,0 +1,17 @@
+<nav>
+    <div class="navbar">
+        <div class="logo-box" (click)="navigateTo('/')">
+            <mat-icon>school</mat-icon>
+
+            <div class="app-name">
+                <span>Knowledge</span> <span>Base</span>
+            </div>
+        </div>
+
+        <div class="header-box">
+            <button mat-button (click)="navigateTo('/add')">Hinzufügen</button>
+            <button mat-button (click)="navigateTo('/agb')">AGB</button>
+            <button mat-button (click)="navigateTo('/legal-notice')">Impressum</button>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,40 @@
+<div class="add-container">
+    <app-navigation></app-navigation>
+
+    <div class="card-div">
+        <button mat-icon-button class="back-btn" (click)="navigateTo('/')">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+
+        <mat-card class="example-card">
+            @if (showSpinner) {
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            }
+
+            <mat-card-content>
+                <div class="input-fields">
+                    <mat-form-field class="example-form-field">
+                        <mat-label>Titel</mat-label>
+                        <input matInput type="text" [formControl]="title">
+                    </mat-form-field>
+    
+                    <mat-form-field class="example-form-field" style="height: 36vh;">
+                        <mat-label>Text</mat-label>
+                        <textarea matInput type="text" [formControl]="content"></textarea>
+                    </mat-form-field>
+    
+                    <mat-form-field class="example-form-field">
+                        <mat-label>Autor</mat-label>
+                        <input matInput type="text" [formControl]="autor">
+                    </mat-form-field>
+                </div>
+            </mat-card-content>
+            
+            <mat-card-actions>
+              <div class="save-btn">
+                <button mat-flat-button [disabled]="!title.valid || !content.valid || !autor.valid" (click)="saveArtikel()">Speichern</button>
+              </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

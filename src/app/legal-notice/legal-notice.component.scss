@@ -1,0 +1,17 @@
+.card-div {
+    height: 90vh;
+    display: flex;
+    background-color: var(--bg-light-grey);
+}
+
+.back-btn {
+    position: absolute;
+    top: 15vh;
+    left: 2vw;
+    color: var(--dark-grey);
+}
+
+h2 {
+    margin-left: 15vw;
+    margin-top: 6vh;
+}
